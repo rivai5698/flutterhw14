@@ -61,7 +61,7 @@ class _AddressDetailPageState extends State<AddressDetailPage> {
             children: [
               MyTextField(
                   textEditingController: _controller,
-                  hintText: 'Điền thông tin',
+                  hintText: option ?'Điền tỉnh/thành phố':'Điền quận/huyện',
                   inputCheck: '',
                   onChanged: (string) {
                     if(option){
